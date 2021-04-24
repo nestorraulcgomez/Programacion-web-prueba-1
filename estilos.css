@@ -23,7 +23,7 @@ body {
 .img-fluid {
   position: inherit;
   width: 2000px;
-  height: auto;
+  height: 400px;
   float: center;
   padding: 10px;
   margin-bottom: 10px;

@@ -80,10 +80,25 @@ div.content {
     padding: 0;
     margin-bottom: 10px;
   }
+  .img-personal{
+    width: auto;
+    height: auto;
+    margin: 180px;
+  }
   .columnas {
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+
+#central{
+  position: relative;
+  left: 300px;
+}
+
+#texto{
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 400px) {

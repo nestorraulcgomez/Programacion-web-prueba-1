@@ -2,6 +2,22 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: #f1f1f1;
 }
+/* Inicio */
+.portada {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  border-bottom: 1px ridge black;
+  margin-bottom: 40px;
+}
+.texto-portada {
+  padding: 10%;
+  text-align: left;
+  position: static;
+}
+.img-portada {
+  padding: 10%;
+}
 /* Pagina Contacto Columnas */
 .columnas {
   margin-top: 50px;
@@ -21,20 +37,11 @@ body {
 }
 /* imagen portada */
 .img-fluid {
-  position: inherit;
-  width: 2000px;
-  height: 400px;
-  float: center;
-  padding: 10px;
+  width: auto;
+  height: 150px;
   margin-bottom: 10px;
 }
 /* texto portada */
-.texto {
-  padding: 10px;
-  border-top: 1px ridge #2e2d2d;
-  border-bottom: 1px ridge #2e2d2d;
-  position: inherit;
-}
 
 /* Sidebar links */
 .sidebar a {
@@ -61,7 +68,7 @@ div.content {
 }
 
 /* Media Query */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 992px) {
   .sidebar {
     width: 0;
     height: 0;
@@ -80,15 +87,36 @@ div.content {
     padding: 0;
     margin-bottom: 10px;
   }
+  .img-personal{
+    width: auto;
+    height: auto;
+    margin: 180px;
+  }
   .columnas {
     display: grid;
     grid-template-columns: 1fr;
   }
-}
-
-@media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
   }
+  .portada {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .texto-portada {
+    padding: 0;
+    position: inherit;
+    text-align: center !important;
+  }
+  .texto {
+    border-bottom: 1px ridge black;
+    padding-bottom: 30px;
+  }
+  .img-portada {
+    padding: 0;
+  }
 }
+

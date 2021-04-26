@@ -120,3 +120,21 @@ div.content {
   }
 }
 
+
+.imagen1 {
+  float: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.imagen {
+  padding: 1%;
+  float: right !important;
+  position: inherit;
+}
+
+.img1 {
+  padding: 1%;
+  float: right !important;
+  position: inherit;
+}
